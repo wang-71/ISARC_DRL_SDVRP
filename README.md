@@ -44,16 +44,16 @@ Verify:
 python -c "import gurobipy as gp; print(gp.gurobi.version())"
 ```
 
-Quick Start
-A) Train DRL model
+## Quick Start
+### A) Train DRL model
 
 Run 1_Train.ipynb.
 
-B) Run DRL inference (checkpoint)
+### B) Run DRL inference (checkpoint)
 
 Run 2_DRL_Results.ipynb and set the checkpoint path near the top of the notebook (e.g., ckpt_path = "checkpoints/xxx.ckpt").
 
-C) Benchmark vs Gurobi / GA / NN
+### C) Benchmark vs Gurobi / GA / NN
 
 Run 3_Benchmark_Gurobi_GA_NN.ipynb.
 
