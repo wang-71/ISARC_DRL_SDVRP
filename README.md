@@ -2,6 +2,8 @@
 
 This repository provides a reproducible implementation of an attention-based deep reinforcement learning (DRL) approach for task sequence optimization in gantry-robot connection operations, formulated as a Split-Delivery Vehicle Routing Problem (SDVRP). The DRL policy is trained using RL4CO and benchmarked against Gurobi (exact), Genetic Algorithm (GA), and a Nearest Neighbor (NN) heuristic.
 
+<img width="340" height="500" alt="Screenshot 2026-01-15 190148" src="https://github.com/user-attachments/assets/8e307dd0-7173-41af-98a7-f25a9a461d83" />
+
 ## Environment Requirements
 
 - Python: **3.12**
@@ -35,3 +37,34 @@ conda activate rl4co_sdvrp
 ### 2) Install RL4CO
 ```bash
 pip install rl4co==0.6.0
+```
+### 3)(Optional) Install Gurobi for exact-solver benchmarking
+Verify:
+```bash
+python -c "import gurobipy as gp; print(gp.gurobi.version())"
+```
+
+Quick Start
+A) Train DRL model
+
+Run 1_Train.ipynb.
+
+B) Run DRL inference (checkpoint)
+
+Run 2_DRL_Results.ipynb and set the checkpoint path near the top of the notebook (e.g., ckpt_path = "checkpoints/xxx.ckpt").
+
+C) Benchmark vs Gurobi / GA / NN
+
+Run 3_Benchmark_Gurobi_GA_NN.ipynb.
+
+Reproducibility (minimal notes)
+
+Instance generation is seed-controlled (see notebooks).
+
+Structural layout and demand rules are defined in simple_stru_sampler.py.
+
+For fair comparison, use the same dataset/seed across all methods.
+
+Outputs
+
+Typical outputs include route visualizations (DRL/Gurobi/GA/NN), total route length (objective), and runtime statistics.
