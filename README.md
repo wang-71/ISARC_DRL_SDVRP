@@ -57,7 +57,7 @@ Run 2_DRL_Results.ipynb and set the checkpoint path near the top of the notebook
 
 Run 3_Benchmark_Gurobi_GA_NN.ipynb.
 
-Reproducibility (minimal notes)
+## Reproducibility (minimal notes)
 
 Instance generation is seed-controlled (see notebooks).
 
@@ -65,6 +65,6 @@ Structural layout and demand rules are defined in simple_stru_sampler.py.
 
 For fair comparison, use the same dataset/seed across all methods.
 
-Outputs
+## Outputs
 
 Typical outputs include route visualizations (DRL/Gurobi/GA/NN), total route length (objective), and runtime statistics.
