@@ -32,32 +32,5 @@ This repository provides a reproducible implementation of an attention-based dee
 conda create -n rl4co_sdvrp python=3.12 -y
 conda activate rl4co_sdvrp
 
-### 2) pip install rl4co==0.6.0
-
-### 3) (Optional) Install Gurobi for exact-solver benchmarking
-
-Quick Start
-A) Train DRL model
-
-Run 1_Train.ipynb.
-
-B) Run DRL inference (checkpoint)
-
-Run 2_DRL_Results.ipynb and set the checkpoint path near the top of the notebook (e.g., ckpt_path = "checkpoints/xxx.ckpt").
-
-C) Benchmark vs Gurobi / GA / NN
-
-Run 3_Benchmark_Gurobi_GA_NN.ipynb.
-
-Reproducibility (minimal notes)
-
-Instance generation is seed-controlled (see notebooks).
-
-Structural layout and demand rules are defined in simple_stru_sampler.py.
-
-For fair comparison, use the same dataset/seed across all methods.
-
-Outputs
-
-Typical outputs include route visualizations (DRL/Gurobi/GA/NN), total route length (objective), and runtime statistics.
-
+2) Install RL4CO
+pip install rl4co==0.6.0
