@@ -31,6 +31,7 @@ This repository provides a reproducible implementation of an attention-based dee
 ```bash
 conda create -n rl4co_sdvrp python=3.12 -y
 conda activate rl4co_sdvrp
-
-2) Install RL4CO
+```
+### 2) Install RL4CO
+```bash
 pip install rl4co==0.6.0
