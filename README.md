@@ -2,7 +2,7 @@
 
 This repository provides a reproducible implementation of an attention-based deep reinforcement learning (DRL) approach for task sequence optimization in gantry-robot connection operations, formulated as a Split-Delivery Vehicle Routing Problem (SDVRP). The DRL policy is trained using RL4CO and benchmarked against Gurobi (exact), Genetic Algorithm (GA), and a Nearest Neighbor (NN) heuristic.
 
-<img width="340" height="500" alt="Screenshot 2026-01-15 190148" src="https://github.com/user-attachments/assets/8e307dd0-7173-41af-98a7-f25a9a461d83" />
+<img width="404" height="575" alt="image" src="https://github.com/user-attachments/assets/2275d546-d527-414c-92b6-4ae2e2ff7ef7" />
 
 ## Environment Requirements
 
