@@ -38,7 +38,7 @@ conda activate rl4co_sdvrp
 ```bash
 pip install rl4co==0.6.0
 ```
-### 3)(Optional) Install Gurobi for exact-solver benchmarking
+### 3) (Optional) Install Gurobi for exact-solver benchmarking
 Verify:
 ```bash
 python -c "import gurobipy as gp; print(gp.gurobi.version())"
